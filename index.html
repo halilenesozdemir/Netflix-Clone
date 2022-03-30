@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>N_E_T_F_L_I_X</title>
+
+</head>
+<body>
+
+    <div class="nav" id="nav">
+        <img src="images/netflix-logo.png" alt="" class="nav__logo"/>
+        <img src="images/netflix-avatar.png" alt="" class="nav__avatar"/>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner" id="banner">
+        <video id="video" class="banner"  poster="images/videoframe.jpg" style="pointer-events:none;">
+            <source src="" type="video/mp4" />
+        </video>
+        <div class="banner__contents">
+            <h1 class="banner__title">Bridgerton</h1>
+            <div class="banner_buttons">
+                <button class="banner__button" id='btnPlayPause' accesskey="P" onclick='playPauseVideo();'>Play</button>
+                <button class="banner__button">My List</button>
+            </div>
+            <div class="banner__desc">
+                The eight close-knit siblings of the Bridgerton family look for love and happiness in London high society. 
+                Inspired by Julia Quinn's bestselling novels.
+            </div>
+        </div>
+    </div>
+
+    <!-- Netflix Originals -->
+    <div class="row first">
+        <h2>NETFLIX ORIGINALS</h2>
+        <div class="row_posters">
+            <img src="images/large-movie1.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie2.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie3.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie4.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie5.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie6.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie7.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie3.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie1.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie2.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie3.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie4.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie5.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie6.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie7.jpg" alt="" class="row__poster row__posterLarge"/>
+            <img src="images/large-movie3.jpg" alt="" class="row__poster row__posterLarge"/>
+        </div>
+    </div>
+
+    <!-- Trending Now -->
+    <div class="row">
+        <h2>TRENDING NOW</h2>
+        <div class="row_posters">
+            <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie1.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie1.jpg" alt="" class="row__poster"/>
+        </div>
+    </div>
+
+    <!-- Top Rated -->
+    <div class="row">
+        <h2>TOP RATED</h2>
+        <div class="row_posters">
+            <img src="images/small-movie1.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie1.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+        </div>
+    </div>
+
+    <!-- Action Movies -->
+    <div class="row">
+        <h2>ACTION MOVES</h2>
+        <div class="row_posters">
+            <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie1.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie1.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+        </div>
+    </div>
+    
+    <!-- Comedy Movies -->
+    <div class="row">
+        <h2>COMEDY MOVIES</h2>
+        <div class="row_posters">
+            <img src="images/small-movie1.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie1.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+        </div>
+    </div>
+    
+        
+    <!-- Horror Movies -->
+    <div class="row">
+        <h2>HORROR MOVIES</h2>
+        <div class="row_posters">
+            <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie1.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie1.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+        </div>
+    </div>
+
+        
+    <!-- Romance Movies -->
+    <div class="row">
+        <h2>ROMANCE MOVIES</h2>
+        <div class="row_posters">
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie1.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie1.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+
+        </div>
+    </div>
+
+        
+    <!-- Documentaries -->
+    <div class="row">
+        <h2>DOCUMENTARIES</h2>
+        <div class="row_posters">
+            <img src="images/small-movie1.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+            <img src="images/small-movie1.jpg" alt="" class="row__poster"/>
+        </div>
+    </div>
+
+    <script>
+        player = document.getElementById('video');
+        btnPlayPause = document.getElementById('btnPlayPause');
+        player.addEventListener('play', function() {
+		changeButtonType(btnPlayPause, 'Pause');
+        }, false);
+    
+        player.addEventListener('pause', function() {
+            changeButtonType(btnPlayPause, 'Play');
+        }, false);
+        
+        function playPauseVideo() {
+            if (player.paused || player.ended) {
+                changeButtonType(btnPlayPause, 'Pause');
+                player.play();
+            }
+            else {
+                changeButtonType(btnPlayPause, 'Play');
+                player.pause();
+            }
+        }
+        function changeButtonType(btn, value) {
+            btn.title     = value;
+            btn.innerHTML = value;
+        }
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >= 100){
+                nav.classList.add('nav__black');
+            }else{
+                nav.classList.remove('nav__black')
+            }
+        })
+    </script>
+</body>
+</html>
